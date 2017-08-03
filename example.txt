@@ -1,2 +1,2 @@
 CLS BS22002\Examples											
-Q2	Select the correct answer	Your guess is as good as mine	TA	TB	FC	TD	TE	TF	 	 	 
+Q2	Select the <span style='color:blue'>correct</span> answer	Your guess is as good as mine	TA	TB	FC	TD	TE	TF	 	 	 

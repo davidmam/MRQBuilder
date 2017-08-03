@@ -104,7 +104,7 @@ def buildQuestions(INPUTFILE, OUTPUTFILE, NUMBER_OF_RESPONSES, POSITIVE_REQUIRED
                 choices.append(ChoiceTemplate.format(i,t[i]['text']))
                 outcome = '{} "{}"'.format(t[i]['not'], i)
                 allright.append(outcome)
-                fb = "{} {} : Correct!".format(t[i]['not'],t[i]['text'])
+                fb = '<span style="color: red">{}</span> {} : <span style="color: red">Correct!</span>'.format(t[i]['not'],t[i]['text'])
                 feedback = '{} "{}"'.format(t[i]['fb'], i)
                 notright.append(feedback)
                 outcomes.append(OutcomesTemplate.format(i, 1, outcome, fb))

@@ -69,6 +69,7 @@ def buildQuestions(INPUTFILE, OUTPUTFILE, NUMBER_OF_RESPONSES, POSITIVE_REQUIRED
         qprompt = fields[1]
         qfeedback = fields[2]
         responses = []
+        print('Generating question variations for {}'.format(qdesc))
         for r in fields[3:]:        
             response = {'text': r[1:], 'not': '','fb':''}
             if r[0].lower() == 'f':
@@ -116,6 +117,7 @@ def buildQuestions(INPUTFILE, OUTPUTFILE, NUMBER_OF_RESPONSES, POSITIVE_REQUIRED
                                           "".join(choices), "".join(outcomes)), file=ofh)
         if MULTIPLE_FILES:
             print(Qend, file=ofh)
+        print('{} variants produced for {}'.format(qnum, qdesc))
     if not MULTIPLE_FILES:
         print(Qend, file=ofh)
         

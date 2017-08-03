@@ -80,7 +80,7 @@ def buildQuestions(INPUTFILE, OUTPUTFILE, NUMBER_OF_RESPONSES, POSITIVE_REQUIRED
         if tsize == 0:
             tsize = len(responses)
         if MULTIPLE_FILES:
-            ofh = open('{}/{}.qml'.format(outfile,qdesc))
+            ofh = open('{}/{}.qml'.format(outfile,qdesc),'w')
             print(Qstart, file=ofh)
         score = SCORING
         if score == -1:
